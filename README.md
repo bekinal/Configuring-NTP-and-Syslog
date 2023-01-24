@@ -48,6 +48,27 @@ Syslog is verified as running by opening the server:<br/>
 <br />
 <br />
 
+<h2>Configure NTP:</h2>
+The NTP server is opened. NTP services are turned on, and the correct date/time is selected:<br/>
+<img src="https://imagizer.imageshack.com/img922/2380/XhJ90J.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+After entering global configuration mode on router 1, a ping is run to the NTP server to verify connection:<br/>
+<img src="https://imagizer.imageshack.com/img923/9974/1pESnG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+The router is then configured to log the date and time from the NTP server:<br/>
+<img src="https://imagizer.imageshack.com/img923/1487/qQ9lls.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+The "show clock" command is run to verify that the NTP server is working as intended:<br/>
+<img src="https://imagizer.imageshack.com/img922/238/A6jxF8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+The syslog server is viewed to verify the NTP is logging under the correct time/format:<br/>
+<img src="https://imagizer.imageshack.com/img923/7778/e2Hh4h.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
 
 <!--
  ```diff
